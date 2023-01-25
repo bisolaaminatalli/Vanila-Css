@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,100&display=swap");
 
 body {
- background-color: black;
- font-family: 'Poppins', sans-serif;;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
 }
 
 .flex-container {
@@ -14,7 +14,7 @@ body {
 }
 
 .flex-child {
-    position: relative;
+  position: relative;
 }
 
 .flex-child div {
@@ -41,31 +41,29 @@ body {
   z-index: 1;
 }
 
-
 /* Glass layer styling */
 
 .glass-layer {
-    
-    position: absolute;
-    top: 0;
-    left : 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: solid red 3px; */
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.007);
 
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.007);
-    
-    backdrop-filter: blur(100px);
-    z-index: 3;
-} 
+  backdrop-filter: blur(100px);
+  z-index: 3;
+}
 
-.nav-parent{
+.nav-parent {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid white;
   width: 100%;
 }
-.brand-name{
+.brand-name {
   color: white;
   margin: 10px;
   padding: 10px;
@@ -77,7 +75,7 @@ body {
   font-weight: 400;
   color: grey;
 }
-.nav-link{
+.nav-link {
   color: white;
   margin: 10px;
   /* border: solid red; */
@@ -90,7 +88,7 @@ body {
   text-decoration: none;
   color: white;
 }
-.btn-one{
+.btn-one {
   border-radius: 15px;
   background-color: black;
   color: white;
@@ -103,14 +101,13 @@ body {
 .btn-one i {
   margin-left: 5px;
 }
-.brand-logo{
+.brand-logo {
   color: white;
-  margin: 0 auto; 
+  margin: 0 auto;
   margin: 20px;
   padding: 20px;
-  
 }
-.fa-bolt{
+.fa-bolt {
   font-size: 25px;
 }
 
@@ -122,57 +119,52 @@ body {
   margin: 0 auto;
   /* border: solid red 2px; */
 }
-.first-content{
-  color:white;
+.first-content {
+  color: white;
   font-size: 40px;
-  
-
 }
-.flex-content{
+.flex-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white; 
+  color: white;
 }
-.flex-item1{
+.flex-item1 {
   margin-bottom: 20px;
   height: 100px;
   width: 50%;
   background-color: rgba(0, 0, 0, 0.007);
   font-size: 25px;
   font-weight: 700;
-
 }
-.flex-item2{
+.flex-item2 {
   padding: 10px;
   width: 50%;
   margin-right: 6px;
   background-color: rgba(0, 0, 0, 0.007);
   font-weight: 400;
 }
-.div-container{
+.div-container {
   width: 100%;
   padding: 5px 0;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top:10px;
-  background-color: rgba(23,23,23,255);
-
+  margin-top: 10px;
+  background-color: rgba(23, 23, 23, 255);
 }
-.flex-object1{
-  padding-left:10px;
+.flex-object1 {
+  padding-left: 10px;
   margin-left: 45px;
 }
-.flex-object2{
- 
-  margin-right:45px;
+.flex-object2 {
+  margin-right: 45px;
 }
-.btn-two{
+.btn-two {
   border-radius: 15px;
   background-color: white;
   color: black;
   border: white 1px solid;
- padding: 10px;
+  padding: 10px;
   width: 100px;
 
   font-size: 12px;
@@ -181,58 +173,52 @@ body {
   align-items: center;
   gap: 10px;
 }
-.cover{
-  background-color: rgba(23,23,23,255);
+.cover {
+  background-color: rgba(23, 23, 23, 255);
   margin-top: 50px;
 }
-.inner-text{
-  color:white
+.inner-text {
+  color: white;
 }
-.div-paragraph{
-  
+.div-paragraph {
   margin-top: 20px;
 }
-.icon-flex{
+.icon-flex {
   display: flex;
-padding: 10px 0;
-gap: 10px;
-
-  
+  padding: 10px 0;
+  gap: 10px;
 }
-.flex-term{
+.flex-term {
   display: flex;
   gap: 10px;
 }
 
-.container-one{
+.container-one {
   width: 100%;
   padding: 1px 0;
   max-width: 1200px;
   margin: 0 auto;
 }
-.flex-item3{
+.flex-item3 {
   margin-bottom: 10px;
   padding: 10px;
   background-color: black;
 }
-.flex-item1{
+.flex-item1 {
   margin-bottom: 80px;
   padding: 10px;
-  
 }
-.link{
-  
+.link {
   padding: 0px;
-
 }
-.input-button{
+.input-button {
   display: flex;
   margin: 0px;
   padding: 0px;
   gap: 0px;
 }
 
-.input-button input{
+.input-button input {
   border: 0px;
   outline: none;
   background: transparent;
@@ -243,25 +229,35 @@ gap: 10px;
   border-top: 0;
   border-left: 2px solid white;
   border-bottom: 2px solid white;
-   /* border-top: 0;  */
+  /* border-top: 0;  */
 }
 
 .piper {
- 
-  height: 50px;
-  width: 50px;
-border: solid red 2px; 
+  /* height: 50px; */
+  /* width: 50px; */
+  /* 
+    👆👆👆👆👆👆👆👆
+    I told you to reduce these values I commented 👆above
+    to be smaller, "50px" height & width is 
+    still too big!. 
+
+    ** But don't worry i just helped reduced them for
+    you 👇below to "30px".
+  */
+  height: 30px;
+  width: 30px;
+
+  /* border: solid red 2px; */
   z-index: 10;
   position: absolute;
   top: 1570px;
-  left: 960px;
+  left: 941px;
   background-color: black;
 }
 
-
-.btn-three{
+.btn-three {
   border: 0;
-  width:100px;
+  width: 100px;
   border: 2px solid white;
   outline: none;
   background: transparent;
