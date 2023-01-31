@@ -10,7 +10,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: black;
-  height: 600px;
 }
 
 .flex-child {
@@ -19,10 +18,11 @@ body {
 
 .flex-child div {
   position: absolute;
-  border-radius: 70%;
+  border-radius: 75%;
+  width: 250px;
+  height: 600px;
+margin-top: 150px;
 
-  width: 350px;
-  height: 350px;
 }
 
 .flex-item1 {
@@ -35,10 +35,16 @@ body {
   top: -30px;
 }
 .flex-item3 {
-  background-color: rgba(0, 0, 255, 0.432);
+  background-color: rgba(0, 0, 255, 0.493);
   left: -200px;
-  bottom: -190px;
+  bottom: -100px;
   z-index: 1;
+}
+
+.flex-item4{
+  background-color: rgba(0, 128, 0, 0.521);
+  
+
 }
 
 /* Glass layer styling */
@@ -48,12 +54,12 @@ body {
   top: 0;
   left: 0;
   /* border: solid red 3px; */
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   background-color: rgba(0, 0, 0, 0.007);
 
   backdrop-filter: blur(100px);
-  z-index: 3;
+  z-index: 7;
 }
 
 .nav-parent {
@@ -126,24 +132,28 @@ body {
 .flex-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   color: white;
 }
-.flex-item1 {
+.stage-one {
   margin-bottom: 20px;
   height: 100px;
   width: 50%;
-  background-color: rgba(0, 0, 0, 0.007);
   font-size: 25px;
   font-weight: 700;
 }
-.flex-item2 {
+
+.stage-one p{
+  margin: 2px 0;
+}
+.stage-two{
   padding: 10px;
   width: 50%;
   margin-right: 6px;
-  background-color: rgba(0, 0, 0, 0.007);
+  
   font-weight: 400;
 }
+
 .div-container {
   width: 100%;
   padding: 5px 0;
@@ -199,30 +209,37 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-.flex-item3 {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: black;
+.stage-three {
+  margin-top: 5px;
+  padding: 4px;
+  
 }
-.flex-item1 {
-  margin-bottom: 80px;
-  padding: 10px;
+
+.items {
+  padding : none 0;
+  margin : none 0;
 }
-.link {
-  padding: 0px;
+
+.items p {
+  margin: 2px 0;
 }
 .input-button {
   display: flex;
   margin: 0px;
   padding: 0px;
   gap: 0px;
+  position: relative;
 }
 
 .input-button input {
+  
+ 
+ 
   border: 0px;
   outline: none;
   background: transparent;
-  color: rgb(90, 25, 25);
+  color: white;
+  font-size: 15px;
   padding: 16px;
   /* border-left-width:0;  */
   border-right: 0;
@@ -244,14 +261,12 @@ body {
     ** But don't worry i just helped reduced them for
     you 👇below to "30px".
   */
-  height: 30px;
-  width: 30px;
-
-  /* border: solid red 2px; */
-  z-index: 10;
+  height: 40px;
+  width: 3px;
+  border: solid black 2px;
   position: absolute;
-  top: 1570px;
-  left: 941px;
+  top: 0px;
+  left: 0px;
   background-color: black;
 }
 
@@ -263,4 +278,124 @@ body {
   background: transparent;
   color: white;
   border-radius: 0px 30px 30px 0;
+}
+
+.hr-dark{
+border: 1px solid black;
+}
+.base-bottom{
+  margin-top: 40px !important;
+  padding : 0;
+    margin : 0;
+ 
+}
+.base-bottom p{
+ margin: 1px 0; 
+}
+.container-staged{
+  width: 100%;
+  padding: 5px 0;
+  max-width: 1200px;
+  margin: 0 auto;}
+
+.flex-display {
+  display: flex;
+  justify-content: space-between;
+  
+  color: white;
+}
+.grade-one {
+  
+  height: 100px;
+  width: 50%;
+  font-size: 25px;
+  font-weight: 700;
+}
+.grade-one p{
+
+}
+.grade-two{
+  padding: 10px;
+  width: 50%;
+  margin-right: 6px;
+  
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 500px){
+
+.flex-content{
+  flex-direction: column;
+  padding: 10px;
+  margin: 5px;
+
+}
+
+.first-content{
+  padding: 10px;
+}
+.flex-display{
+  flex-direction: column;
+  padding: 10px;
+}
+
+.grade-one{
+width: 100%;
+}
+
+.grade-two{
+  width: 100%;
+}
+
+
+.nav-link a{
+  width:100%;
+  display:none;
+}
+
+.stage-one p{
+
+height:100px;
+
+margin: 25px 0px;
+}
+
+.stage-one i{
+  margin: 35px;
+}
+.stage-two p { 
+  margin: 22px 0;
+
+}
+
+.brand-name {
+  width: 100px;
+}
+
+.input-button input{
+ margin-top: 10px;
+}
+
+.flex-object1 {
+margin-left: 2px;
+padding-left: 10px;
+}
+
+.inner-text{
+  padding-left: 15px;
+}
+.stage-one{
+  width:100%;
+}
+.stage-two{
+  width: 100%;
+}
+
+.flex-child div {
+  position: absolute;
+  border-radius: 75%;
+  width: 195px;
+  height: 600px;
+margin-top: 150px;
+}
 }
