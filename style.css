@@ -398,4 +398,43 @@ padding-left: 10px;
   height: 600px;
 margin-top: 150px;
 }
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.flex-child {
+  position: relative;
+}
+
+
+
+
+
+.flex-item1 {
+  background-color: rgba(255, 255, 0, 0.329);
+  left: -76px;
+}
+.flex-item2 {
+  background-color: rgba(255, 0, 0, 0.534);
+  right: -35px;
+  top: -30px;
+}
+.flex-item3 {
+  background-color: rgba(0, 0, 255, 0.493);
+  left: -200px;
+  bottom: -100px;
+  z-index: 1;
+}
+
+.flex-item4{
+  background-color: rgba(0, 128, 0, 0.521);
+  
+
+}
+
 }
